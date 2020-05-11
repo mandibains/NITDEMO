@@ -2,9 +2,14 @@
 #- name: Install Mysql package
  # apt: name=['mysql-server'] state=present
 
-- name: Install Mysql package
-  apt: name = "{{mysql_pkgs}}" state =installed
+#- name: Install Mysql package
+#  apt: name = "{{mysql_pkgs}}" state =installed
 
+- name: Install the mysql packages in Debian derivatives
+  apt: name={{ item }} state=installed update_cache=yes
+  with_items:
+    - "{{ mysql_pkgs }}"
+    
 - name: Create Mysql configuration file
   template: src=templates/my.cnf.j2 dest=/etc/my.cnf
   notify:
