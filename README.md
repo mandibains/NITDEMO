@@ -5,12 +5,9 @@ This repo is to do a demo together with packer, ansible and terraform with AWS.
 
 ## Overview
 
-This project creates a AWS EC2 Instance that runs a local version of the website
-[https://growlerfriday.com](https://growlerfriday.com) - which is pulled down
-from [its GitHub repo](https://github.com/alkrauss48/growler-friday) and run using nginx.
+This project creates a AWS EC2 Instance that runs a local version of the websiteand run using nginx.
 
-Once created if you put IP address of ec2 into the browser, it should show the website resembles[https://growlerfriday.com](https://growlerfriday.com)
-
+Once created if you put IP address of ec2 into the browser, it should show the website
 
 ## Usage
 
@@ -21,7 +18,6 @@ Prior to running, make sure you have
 configure `awscli` if it's not already configured. [configure awscli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
 ```bash
-git clone https://github.com/aleti-pavan/packer-ansible-terraform-demo.git
 cd packer-ansible-terraform-demo
 
 cd packer
@@ -74,4 +70,4 @@ Login to AWS Console and verify the EC2 Dashboard on the right region to make su
 
 
 
-This project is created with reference to `https://github.com/alkrauss48/ansible-packer-terraform-demo` , Many Thanks
+This project is created with reference to an existing GITHUB project by aleti-pavan , Many Thanks
