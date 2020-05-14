@@ -29,5 +29,6 @@ data "aws_ami" "packer_image" {
     values = ["hvm"]
   }
 # the owner will be different for your ami so change it
-  owners = ["218067254075"] # Canonical
+#  owners = ["218067254075"] # Canonical
+owners = ["891599952938"]
 }
